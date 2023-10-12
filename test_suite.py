@@ -22,11 +22,11 @@ while(1):
         GPIO.output(17, GPIO.LOW)
         time.sleep(0.5)
         counter = 0
-    #while counter < 5:
-    #    light = mcp.read_adc(0)
-     #   print(light)
-      #  if (light < 2):
-       #     print("dark")
-        #else:
-         #   print("light")
-        #time.sleep(0.1)
+    while counter < 5:
+        light = mcp.read_adc(0)
+        print(light)
+        if (light < 2):
+            print("dark")
+        else:
+            print("light")
+        time.sleep(0.1)
