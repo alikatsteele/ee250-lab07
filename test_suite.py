@@ -30,7 +30,7 @@ while(1):
         else:
             print("light")
         time.sleep(0.1)
-        counter += counter
+        counter = counter+1
     for i in range(4):
         GPIO.output(17, GPIO.HIGH)
         time.sleep(0.2)
@@ -47,4 +47,4 @@ while(1):
             GPIO.output(17, GPIO.HIGH)
             turn_off = 1
         time.sleep(0.1)
-        counter += counter
+        counter = counter+1
