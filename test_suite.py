@@ -22,7 +22,7 @@ while(1):
         GPIO.output(17, GPIO.LOW)
         time.sleep(0.5)
         counter = 0
-    while counter < 5:
+    while counter < 50:
         light = mcp.read_adc(0)
         print(light)
         if (light < 150):
@@ -38,7 +38,7 @@ while(1):
         time.sleep(0.2)
         counter = 0
         turn_off = 0
-    while counter < 5:
+    while counter < 50:
         sound = mcp.read_adc(1)
         print(sound)
         if turn_off == 1:
