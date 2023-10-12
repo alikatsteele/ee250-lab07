@@ -25,7 +25,7 @@ while(1):
     while counter < 5:
         light = mcp.read_adc(0)
         print(light)
-        if (light < 100):
+        if (light < 150):
             print("dark")
         else:
             print("light")
