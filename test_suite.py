@@ -16,9 +16,9 @@ GPIO.setup(11, GPIO.OUT)
 while(1):
     for i in range(5):
         GPIO.output(11, GPIO.HIGH)
-        time.sleep(.5)
+        time.sleep(0.5)
         GPIO.output(11, GPIO.LOW)
-        time.sleep(.5)
+        time.sleep(0.5)
         counter = 0
     #while counter < 5:
     #    light = mcp.read_adc(0)
