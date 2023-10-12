@@ -1,7 +1,7 @@
 import RPi.GPIO as GPIO
 import time
 
-GPIO.setmode(GPIO.BOARD)
+GPIO.setmode(GPIO.BCM)
 
 import Adafruit_GPIO.SPI as SPI
 import Adafruit_MCP3008
@@ -13,13 +13,13 @@ MOSI = 19
 CS   = 24
 mcp = Adafruit_MCP3008.MCP3008(clk=CLK, cs=CS, miso=MISO, mosi=MOSI)
 
-GPIO.setup(11, GPIO.OUT)
+GPIO.setup(17, GPIO.OUT)
 
 while(1):
     for i in range(5):
-        GPIO.output(11, GPIO.HIGH)
+        GPIO.output(17, GPIO.HIGH)
         time.sleep(0.5)
-        GPIO.output(11, GPIO.LOW)
+        GPIO.output(17, GPIO.LOW)
         time.sleep(0.5)
         counter = 0
     #while counter < 5:
