@@ -27,3 +27,4 @@ while(1):
             print("dark")
         else:
             print("light")
+        time.sleep(0.1)
