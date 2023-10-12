@@ -1,6 +1,8 @@
 import RPi.GPIO as GPIO
 import time
 
+GPIO.setmode(GPIO.BOARD)
+
 import Adafruit_GPIO.SPI as SPI
 import Adafruit_MCP3008
 
