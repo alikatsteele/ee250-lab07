@@ -44,7 +44,7 @@ while(1):
         if turn_off == 1:
             GPIO.output(17, GPIO.LOW)
             turn_off = 0
-        if (sound > 600):
+        if (sound > 500):
             GPIO.output(17, GPIO.HIGH)
             turn_off = 1
         time.sleep(0.1)
